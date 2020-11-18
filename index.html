@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Shankar - Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+background-color: black;
+}
+table{
+font:family:arial,sans-serif;
+width:100%;
+}
+td,th{
+border: 1px solid #FFFFFF;
+text-align: middle;
+padding: 10px;
+color:white;
+}
+h2{
+color:white;
+}
+</style>
+</head>
+<body>
+<h1 style="color:white;">Hello All...</h1>
+<h1 style="color:white;">My Name is <span style="color:red;">Shankar</span></h1>
+<br>
+<h2 style="color:white;">Eductaional Background</h2>
+<div style="overflow-x:auto;">
+<table>
+<tr>
+<th>Course</th>
+<th>Institute/College/School</th>
+<th>University/Board</th>
+</tr>
+<tr>
+<td>B.B.A</td>
+<td>Sinhgad College of Commerce(SCOC),Pune</td>
+<td>University of Pune</td>
+</tr>
+<tr>
+<td>Std. XII (Commerce)</td>
+<td>National Education Society ‘s Jr. College of Arts Science & Commerce, Mumbai</td>
+<td>H.S.C Board</td>
+</tr>
+<tr>
+<td>Std. X</td>
+<td>Muktangan English School,Pune</td>
+<td>S.S.C Board</td>
+</tr>
+</table>
+</div>
+<br/>
+<h2>Co-Curricular Activities</h2>
+<br/>
+<details open>
+<summary style="color:white;">Research Paper </summary>
+<p style="color:white;">
+•	Presented and participated research paper (National Conference) on Security, Audit & Control- Error Free Deposit.(Author)</br>
+•	Presented and participated research paper (National Conference) on Green Banking- Green Transaction.(Author)</br>
+•	Submitted research paper on CRM-Vouchers through ATM (National Conference).(Co-Author)
+
+</p>
+</details>
+<br/>
+
+<details open>
+<summary style="color:white;">Other Activities</summary>
+<p style="color:white;">
+•	Participated in inter college competition –AVISHKAR 2011. <br/>
+•	Participated in snap hunt event at Perception’12 in VIIT College. <br/>
+•	Participated as volunteer in various event held in college.  
+</p>
+</details>
+<br/>
+<br/>
+<form>
+<fieldset style="color:white;">
+<legend style="color:white;">Contact Us</legend>
+<label style="color:white;">Name</label>
+<input type="text" id="name1" name="name1">
+<br> <br>
+<label style="color:white;">Message</label>
+<input type="text" id="message" name="message" >
+<br><br>
+<button onclick="shankar()">Submit</button>
+</fieldset>
+</form>
+<script>
+
+
+function shankar(){
+var c = document.getElementById("name1").value.length;
+var d = document.getElementById("message").value.length;
+if(c<1){
+alert ("please enter the name");
+}else if(d<1){
+alert("please enter the mesage");
+}else{
+alert("We will get back to you soon");
+}
+return false;
+}
+</script>
+</body>
+</html>
